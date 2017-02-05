@@ -1,0 +1,76 @@
+<h1 id="PageTitle">ユーザプロフィール</h1>
+<p>入力フォーム</p
+	<div class="container">
+<!--
+      <a href="http://zipcloud.ibsnet.co.jp/doc/api">
+        powered by<br>
+        <img src="logo_zipcloud.png" alt="Link for ZipCloud" width="15%" height="15%">
+      </a>
+-->
+      <form action="http://devlabs.link/post.php">
+
+        <div class="form-group">
+          <label for="inputDisplayName">Display Name</label>
+          <input type="text" class="form-control" id="inputDisplayName" placeholder="user001">
+        </div>
+
+        <fieldset class="form-group">
+<!--
+           <legend>Gendery Type</legend>
+-->
+           <label>Gendery Type</label>
+          
+           <div class="form-check">
+               <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  Male
+               </label>
+           </div>
+
+           <div class="form-check">
+              <label class="form-check-label">
+                 <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                 Female
+              </label>
+           </div>
+        </fieldset>
+
+        <div class="form-inline form-group">
+           <div class="form-group">
+             <label for="input-zipcode-num">郵便番号</label>
+             <div id="output-zipcode-errmsg"></div>
+             <input type="text" class="form-control" id="input-zipcode-num" placeholder="例)1234567">
+           </div>
+
+           <div class="form-group">
+              <button type="button" id="btn2" class="btn btn-primary">検索</button>
+           </div>
+        </div>
+
+        <div class="form-group">
+          <label>住所</label>
+          <label for="search-result1">都道府県</label>
+          <input type="text" class="form-control" id="search-result1" placeholder="Output Text"> 
+        </div>
+
+        <div class="form-group">
+          <label for="search-result2">市区町村</label>
+          <input type="text" class="form-control" id="search-result2" placeholder="Output Text"> 
+        </div>
+
+        <div class="form-group">
+          <label for="search-result3">番地など</label>
+          <input type="text" class="form-control" id="search-result3" placeholder="Output Text"> 
+        </div>
+
+        <div class="form-group">
+          <label for="search-result4">検索結果(住所カナ)</label>
+          <input type="text" class="form-control" id="search-result4" placeholder="Output Text"> 
+        </div>
+
+        <div class="form-group">
+        	<button type="button" id="btn3" class="btn btn-primary">登録</button>
+        </div>
+
+      </form>
+    </div>
