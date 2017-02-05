@@ -105,5 +105,39 @@
             });
           }
         });
+
+        $("#btn3").click(function(){
+          console.log("btn2 click");
+          
+          var zipcode_value = $("#input-zipcode-num").val();
+ 
+          console.log($("#input-zipcode-num").val()); 
+          console.log(zipcode_value.length);   
+
+          zipcode_value = deleteString(zipcode_value, /-/g, '');      
+          $("#input-zipcode-num").val(zipcode_value);
+              
+          if(zipcode_value.length != 7){
+            $("#output-zipcode-errmsg").html("Zipcode is ERROR!").css("color","#f00");
+            $("#search-result1").val("");
+            $("#search-result2").val("");
+          }else{
+            console.log("ajax start");
+
+            $.ajax({
+              type: "GET",
+              url: "http://zipcloud.ibsnet.co.jp/api/search?zipcode="+zipcode_value,
+              dataType: "jsonp",
+              jsonp:"callback",
+              jsonpCallback:"callbackFunc",
+/*
+            }).done(function(data){
+              console.log(data.results);
+              console.log("aaaa");
+*/
+            });
+          }
+        });
+
       });
     </script>

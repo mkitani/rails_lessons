@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'entform_usrprof/ctrl_entform_usrprof'
 
   get 'entform_usrmail/ctrl_entform_usrmail'
-
+  get 'entform_usrmail/ctrl_entform_usrmail_done'
   get 'helloworld/greeting'
   get 'helloworld/say'
   get 'home/index'
