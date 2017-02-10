@@ -1,5 +1,5 @@
-<h1 id="PageTitle">ユーザプロフィール</h1>
-<p>入力フォーム</p>
+<h1 id="PageTitle">ユーザプロフィール登録</h1>
+<p>フォーム入力</p>
 	<div class="container">
 <!--
       <a href="http://zipcloud.ibsnet.co.jp/doc/api">
@@ -10,7 +10,7 @@
       <form action="http://devlabs.link/post.php">
 
         <div class="form-group">
-          <label for="inputDisplayName">Display Name</label>
+          <label for="inputDisplayName">表示名</label>
           <input type="text" class="form-control" id="inputDisplayName" placeholder="user001">
         </div>
 
@@ -18,33 +18,28 @@
 <!--
            <legend>Gendery Type</legend>
 -->
-           <label>Gendery Type</label>
+           <label>性別</label>
           
            <div class="form-check">
                <label class="form-check-label">
                   <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                  Male
+                  男性
                </label>
            </div>
 
            <div class="form-check">
               <label class="form-check-label">
                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                 Female
+                 女性
               </label>
            </div>
         </fieldset>
 
         <div class="form-inline form-group">
-           <div class="form-group">
-             <label for="input-zipcode-num">郵便番号</label>
-             <div id="output-zipcode-errmsg"></div>
-             <input type="text" class="form-control" id="input-zipcode-num" placeholder="例)1234567">
-           </div>
-
-           <div class="form-group">
-              <button type="button" id="btn2" class="btn btn-primary">検索</button>
-           </div>
+          <label for="input-zipcode-num">郵便番号</label>
+          <div id="output-zipcode-errmsg"></div>
+          <input type="text" class="form-control" id="input-zipcode-num" placeholder="例)1234567">
+          <button type="button" id="btn2" class="btn btn-primary">検索</button>
         </div>
 
         <div class="form-group">
@@ -71,11 +66,14 @@
  		<div class="form-group">
           <label for="exampleSelect2">趣味</label>
           <select multiple class="form-control" id="exampleSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option>スポーツ</option>
+            <option>音楽</option>
+            <option>映画</option>
+            <option>旅行</option>
+            <option>料理</option>
+            <option>車</option>
+            <option>写真</option>
+            <option>その他</option>
           </select>
       	</div>
 
