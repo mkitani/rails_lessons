@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  get 'entform_usrprof/ctrl_entform_usrprof'
-
-  get 'entform_usrmail/ctrl_entform_usrmail'
-  post 'entform_usrmail/ctrl_entform_usrmail_done'
-  get 'helloworld/greeting'
-  get 'helloworld/say'
-  get 'home/index'
+  get  'user_profiles/new'
+  get  'users/new'
+  post 'users/create'
+  get  'helloworld/greeting'
+  get  'helloworld/say'
+  get  'home/index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
