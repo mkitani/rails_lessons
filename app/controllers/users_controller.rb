@@ -9,10 +9,12 @@ class UsersController < ApplicationController
 
   	puts "testtest"
 #  	binding.pry
-    user = User.new
-    user.email = params[:email]
-    user.password = params[:password]
-    user.save
+    @user = User.new
+    @user.email = params[:email]
+    @user.password = params[:password]
+    unless @user.save
+      return render action: 'new'
+    end
   end
   private
   	def user_params

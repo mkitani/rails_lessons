@@ -1,0 +1,6 @@
+ja:
+  view:
+    users:
+      new:
+        email: hoge@hoge.com
+        password: abcd1234
